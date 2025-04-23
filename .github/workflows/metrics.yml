@@ -1,2 +1,14 @@
-- name: Metrics embed
-  uses: lowlighter/metrics@v3.34
+name: Readme
+
+on:
+  push:
+    branches:
+      -main
+  workflow_dispatch:
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest 
+    steps:
+    - name: Metrics embed
+      uses: lowlighter/metrics@v3.34
